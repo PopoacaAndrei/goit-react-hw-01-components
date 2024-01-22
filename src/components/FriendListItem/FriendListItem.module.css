@@ -1,0 +1,36 @@
+.item {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 45px;
+  width: 420px;
+  background-color: rgb(21, 121, 54);
+  box-shadow: 5px 5px 15px 5px #817f7f;
+  border-radius: 20px;
+  padding: 15px;
+  transition: scale 300ms, transform 300ms;
+}
+
+.item:hover {
+  scale: 1.05;
+  transform: rotate(3deg);
+}
+
+.statusOnline {
+  width: 25px;
+  height: 25px;
+  background-color: #00b21b;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.statusOffline {
+  composes: statusOnline;
+  background-color: red;
+}
+
+.name {
+  font-weight: 400;
+  color: #2c2b2b;
+}
